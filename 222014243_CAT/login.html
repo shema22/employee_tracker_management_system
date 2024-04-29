@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!-- rukundo shema aloys 222014243-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" title="sytle1" media="tv,projection,handheld,screen,print">
+    <!-- Internal CSS -->
+    <style>
+        .logout-link {
+            position: absolute;
+            top: 15px; 
+            right: 20px; 
+            color: beige;
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <ul>    
+                    <!-- Navigation Links -->
+                    <li><a href="#" id="home-link">Home</a></li>      
+                    <li><a href="#" id="employee-link">Employee</a></li>
+                    <li><a href="#" id="project-link">Project</a></li>
+                    <li><a href="#" id="sites-link">Sites</a></li>
+                    <li><a href="#" id="orientation-link">Orientation session</a></li>
+                    <li><a href="#" id="users-link">Users</a></li>
+                    <li><a href="logout.php" class="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- Main Content Section -->
+    <section id="home-section">
+        <center>
+            <h1>Welcome to Employee Orientation Tracker system</h1>
+            <br>
+            <!-- Login Form -->
+            <form method="POST" action="login.php" onsubmit="return validateForm()" style="background: -webkit-linear-gradient(#00c6d6, #b031d9); background: -moz-linear-gradient(#00c6d6, #b031d9); background: -o-linear-gradient(#00c6d6, #b031d9);">
+                <div>
+                    <fieldset style="border-color: none; border-width: 3px; border-radius: 8px;">
+                        <h1 style="padding: 20px; text-align:center; background-color: wheat;">Login Here</h1>
+                        <center>
+                            <!-- Username and Password Inputs -->
+                            <input type="text" placeholder="Enter Your Username" name="user" id="username" required style="width: 40%; padding: 10px; margin-bottom: 10px; border: 2px solid darkred; border-radius: 5px; box-sizing: border-box;"><br>
+                            <input type="password" placeholder="Enter Your Password" name="password" id="password" required style="width: 40%; padding: 10px; margin-bottom: 10px; border: 2px solid darkred; border-radius: 5px; box-sizing: border-box;"><br>
+                            <br>
+                            <!-- Login Button -->
+                            <input type="submit" value="Login" name="login" style="width: 10%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; background-color: seagreen; border-color: orange;">
+                        </center>
+                    </fieldset>
+                </div>
+            </form>
+        </center>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 UR CBE web Tech. <i>All rights reserved. Designed and developed by Mr. Rukundo Shema Aloys. &reg; REG: 222014243</i></p>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Function for form validation
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Username and password must be filled out");
+                return false;
+            }
+
+            // Additional validation logic can be added here
+
+            return true;
+        }
+
+        // Event listeners for dynamic content loading
+        document.getElementById("home-link").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Implement logic to load home content dynamically
+        });
+
+        document.getElementById("employee-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            // Implement logic to load employee content dynamically
+        });
+
+        // Similar event listeners for other navigation links
+    </script>
+</body>
+</html>

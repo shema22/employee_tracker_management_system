@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>employee</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css" title="sytle1" media="tv,projection,handheld,screen,print">
+<style>
+    .logout-link {
+      position: absolute;
+      top: 15px; 
+      right: 20px; 
+      color: beige;
+      cursor: pointer;  
+    }
+    
+  </style>
+  <script type="text/javascript">
+   // java script code
+
+  </script>
+</head>
+<body>
+<div>
+<header>
+<nav>
+ <ul>    
+<li><a href="report.php">Home</a></li>      
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="employeeret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Employee</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="employee.html">Add NEw Employee</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="projectret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Projects</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="project.html">Add NEw Porject</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="sitesret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Sites</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="site.html">Add NEw site</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="Orientationret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Orientation session</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="orientation.html">Add NEw Orientation session</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="registerret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">users</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="register.html">Add NEw user</a>
+      </div>
+    </li>
+<li><a href="logout.php" class="logout-link ">logout</a>
+
+</li></ul>
+</nav>
+</header>
+    </div>
+    <section id="home">
+    <center><h1> welcome to Employee Orientation Tracker system</h1>
+        <br>
+        <form method="POST" action="employee.php" style="background-color: wheat;">
+            <div> <fieldset style="border-color: lightskyblue; border-width: 3px; border-radius: 8px;"><h1 style="padding: 20px; text-align:center; background-color:skyblue;">Add new Employee</h1>
+
+
+<center>
+      
+      <input type="text" placeholder=" Enter Your First Name" name="fname" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+      <input type="text" placeholder=" Enter Your Last Name" name="lname" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+      <input type="text" placeholder=" Enter Your position" name="position" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+      <input type="number" placeholder="Enter your contact Number " name="contact" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+      <input type="Email" placeholder="Enter your Email " name="email" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+    <br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Add" name="Employee" style=" width: 10%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: cadetblue;
+      border-color: orange;
+      "></fieldset>
+       </div>
+        </form>
+</center>
+</section>
+<!-- footer section where contaions data from developer Mr shema!-->
+  <footer>
+      <p>&copy; 2024 UR CBE web Tech. <i> alright reserverd. designed and developed by Mr.Rukundo shema Aloys . &reg; REG: 222014243</p>
+</footer>
+</body>
+</html>

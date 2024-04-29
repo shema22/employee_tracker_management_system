@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>register</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css" title="sytle1" media="tv,projection,handheld,screen,print">
+<style>
+    .logout-link {
+      position: absolute;
+      top: 15px; 
+      right: 20px; 
+      color: beige;
+      cursor: pointer;  
+    }
+    
+  </style>
+</head>
+<body>
+    <div>
+        <header>
+<nav>
+ <ul>    
+<li><a href="report.php">Home</a></li>      
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="employeeret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Employee</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="employee.html">Add NEw Employee</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="projectret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Projects</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="project.html">Add NEw Porject</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="sitesret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Sites</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="site.html">Add NEw site</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="Orientationret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">Orientation session</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="orientation.html">Add NEw Orientation session</a>
+      </div>
+    </li>
+<li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="registerret.php" style="padding: 10px; color: white; background-color:; text-decoration: none; margin-right: 15px;">users</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="register.html">Add NEw user</a>
+      </div>
+    </li>
+<li><a href="logout.php" class="logout-link ">logout</a>
+
+</li></ul>
+</nav>
+</header>
+    </div>
+    <section id="home">
+    <center><h1> welcome to Employee Orientation Tracker system</h1>
+        <br>
+        <form method="POST" action="site.php" style="background-color: wheat;">
+            <div> <fieldset style="border-color: lightskyblue; border-width: 3px; border-radius: 8px;"><h1 style="padding: 20px; text-align:center; background-color:skyblue;">Add new Site</h1>
+
+
+<center>
+    
+      <input type="text" placeholder=" Enter site Name" name="Sname" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+      <input type="text" placeholder=" Enter location" name="loc" required style=" width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;"><br>
+    <br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Add" name="site" style=" width: 10%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: cadetblue;
+      border-color: orange;
+      "></fieldset>
+       </div>
+        </form>
+</center>
+</section>
+  <footer>
+      <p>&copy; 2024 UR CBE web Tech. <i> alright reserverd. designed and developed by Mr.Rukundo shema Aloys . &reg; REG: 222014243</p>
+</footer>
+</body>
+</html>
