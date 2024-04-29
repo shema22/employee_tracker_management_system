@@ -4,8 +4,8 @@ for admin:
 username: admin
 password:
 for employee:
-username: aric
-password: 123
+username: 222014243
+password: $2y$10$HMvA9GrGxqk1IsP9620x0OwIhZD4xOu6LKP7Z8k9An1LylG5YxeZq
 for user:
 username : 
 password:
