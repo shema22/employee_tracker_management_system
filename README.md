@@ -1,4 +1,4 @@
-# 222014243_WT_Submission_of_CAT_30th_april_2024
+# this system developed by using PHP,HTML AND CSS used for tracking employee schedule and managing them and they activities on site
 #login of my system:
 for admin:
 username: admin
@@ -9,4 +9,4 @@ password: 123
 for user:
 username : eric
 password: 123
-CREATE USER '222014243'@'localhost' IDENTIFIED BY 222014243';
+
